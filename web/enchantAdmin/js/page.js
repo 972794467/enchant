@@ -73,10 +73,9 @@ function userListCallBack(pn,ps,data) {
     pageList.$data.pages_sum = Math.ceil(intCount/pageList.$data.page_size)
     userList.users = [];
     for( intIndex in arrData['users']){
-        console.log(arrData['users'][intIndex]);
-        userList.users.push({user_id:arrData['users'][intIndex]['user_id'],user_name:arrData['users'][intIndex]['user_name'],
-        user_email:arrData['users'][intIndex]['user_email'],user_sex:arrData['users'][intIndex]['user_sex'],
-        user_type:arrData['users'][intIndex]['user_type'],user_avatar:arrData['users'][intIndex]['user_avatar'],});
+        userList.users.push({user_id:arrData['users'][intIndex]['id'],user_name:arrData['users'][intIndex]['name'],
+        user_email:arrData['users'][intIndex]['email'],user_sex:arrData['users'][intIndex]['sex'],
+        user_type:arrData['users'][intIndex]['type'],user_avatar:arrData['users'][intIndex]['avatar']});
     }
     setPagination(pageList.$data.pages_sum,pn,pn);
 }

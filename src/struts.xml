@@ -185,7 +185,8 @@
                 users\[\d+\]\.sex,
                 users\[\d+\]\.avatar,
                 users\[\d+\]\.type,
-                users\[\d+\]\.email
+                users\[\d+\]\.email,
+                    count
                 </param>
 
             </result>

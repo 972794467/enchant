@@ -11,17 +11,34 @@ import java.util.ArrayList;
 
 public class GetUserList extends ActionSupport {
 
-    private int sc;
-    private int sn;
+    private int ps;
+    private int pn;
     private ArrayList<UserItem> userList;
     private UserItem[] users;
+    private int count;
 
-    public int getSc() {
-        return sc;
+    public int getPs() {
+        return ps;
     }
 
-    public int getSn() {
-        return sn;
+    public void setPs(int ps) {
+        this.ps = ps;
+    }
+
+    public int getPn() {
+        return pn;
+    }
+
+    public void setPn(int pn) {
+        this.pn = pn;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     public ArrayList<UserItem> getUserList() {
@@ -40,19 +57,13 @@ public class GetUserList extends ActionSupport {
         this.users = users;
     }
 
-    public void setSc(int sc) {
-        this.sc = sc;
-    }
 
-    public void setSn(int sn) {
-        this.sn = sn;
-    }
 
     @Override
     public String execute() throws Exception {
-        int limit = sc;
-        int offset = (sn - 1) * sc;
-        System.out.println(sc + " " + sn);
+        int limit = ps;
+        int offset = (pn - 1) * ps;
+        //System.out.println(sc + " " + sn);
         userList = new ArrayList<UserItem>();
 
         ServletContext sctx = ServletActionContext.getServletContext();
@@ -77,6 +88,13 @@ public class GetUserList extends ActionSupport {
                     rs.getString(6));
             System.out.println(useritem.getAvatar());
             userList.add(useritem);
+        }
+
+        querySql = "select * from user_info";
+        rs=con.createStatement().executeQuery(querySql);
+        count=0;
+        while (rs.next()){
+            count++;
         }
         users=(UserItem[])userList.toArray(new UserItem[0]);
         System.out.println(users.length+" "+users[0].getType());
