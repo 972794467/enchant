@@ -108,11 +108,11 @@ public class GetMusicList extends ActionSupport implements status {
             System.out.println(musiciteam.getAlbum()+" "+musiciteam.getUpdate_time());
             musicList.add(musiciteam);
         }
-        querySql = "select * from music_info";
+        querySql = "select COUNT(music_id) from music_info";
         rs=con.createStatement().executeQuery(querySql);
-        count=0;
-        while (rs.next()){
-            count++;
+        //count=0;
+        if (rs.next()){
+            count=rs.getInt(1);
         }
         music=(Music[])musicList.toArray(new Music[0]);
         System.out.println(music.length);

@@ -47,7 +47,7 @@ public class DeleteMusic extends ActionSupport {
         }
 
         con.createStatement().executeUpdate(updateSQL);
-
+        STATUS=1000;
         return SUCCESS;
 
     }

@@ -213,7 +213,7 @@
             </interceptor-ref>
             <result type="json" name="success">
                 <param name="excludeProperties">
-                    sc,sn
+                    ps,pn,artist_name,music_name
                 </param>
             </result>
         </action>
@@ -255,6 +255,20 @@
                     STATUS
                 </param>
             </result>
+        </action>
+        <action name="searchUser" class="actions.SearchUser" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="success">
+                <param name="excludeProperties">
+                    ps,pn,name,id
+                </param>
+            </result>
+
         </action>
     </package>
 

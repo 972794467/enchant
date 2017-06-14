@@ -90,11 +90,11 @@ public class GetUserList extends ActionSupport {
             userList.add(useritem);
         }
 
-        querySql = "select * from user_info";
+        querySql = "select COUNT(user_id) from user_info ";
         rs=con.createStatement().executeQuery(querySql);
-        count=0;
-        while (rs.next()){
-            count++;
+        //count=0;
+        if (rs.next()){
+            count=rs.getInt(1);
         }
         users=(UserItem[])userList.toArray(new UserItem[0]);
         System.out.println(users.length+" "+users[0].getType());

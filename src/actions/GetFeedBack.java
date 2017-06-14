@@ -66,11 +66,11 @@ public class GetFeedBack extends ActionSupport {
             feedback.add(fbItem);
             System.out.println(fbItem.getContent());
         }
-        querySQL = "select * from messages where message_type=1";
+        querySQL = "select COUNT(id) from messages where message_type=1";
         rs=con.createStatement().executeQuery(querySQL);
-        count=0;
-        while (rs.next()){
-            count++;
+        //count=0;
+        if (rs.next()){
+            count=rs.getInt(1);
         }
 
         return SUCCESS;
