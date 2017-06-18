@@ -1,4 +1,4 @@
-<div class="container">  
+<d<div class="container">  
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
           <h2>歌曲列表</h2>
@@ -43,30 +43,30 @@
                                                        编辑歌曲
                 </h2>
                 <br />
-          <form class="form-signin" id="update-music" action="/enchant/enchantAdmin/uploadMusic.action" method="post" enctype="multipart/form-data">
+          <form class="form-signin" id="update-music" action="/enchant/enchantAdmin/editMusic.action" method="post" enctype="multipart/form-data">
               <div class="form-group form-inline">
                   <label for="musicName">歌曲id</label>
-                  <input class="form-control" name="music_id" type="number" disabled="disabled" />
+                  <input class="form-control" name="music_id" id="edit_music_id" type="number" disabled="disabled" />
               </div>
               <div class="form-group form-inline">
                 <label for="musicName">歌曲名</label>
-                <input type="text" class="form-control" name="musicName" id="musicName" placeholder="歌曲名称" required>
+                <input type="text" class="form-control" name="musicName" id="edit_music_name" placeholder="歌曲名称" required>
               </div>
               <div class="form-group form-inline">
                 <label for="musicArtistName">艺术家</label>
-                <input type="text" class="form-control" name="musicArtistName" id="musicArtistName" placeholder="艺术家" required>
+                <input type="text" class="form-control" name="musicArtistName" id="edit_music_artist_name" placeholder="艺术家" required>
               </div>
               <div class="form-group form-inline">
                 <label for="musicAlbum">专辑名</label>
-                <input type="text" class="form-control" name="musicAlbum" id="musicAlbum" placeholder="专辑名" required>
+                <input type="text" class="form-control" name="musicAlbum" id="edit_music_album" placeholder="专辑名" required>
               </div>
               <div class="form-group form-inline">
-                <label for="musicDuration">音乐时长</label>
-                <input type="time" class="form-control" name="musicDuration" id="musicDuration" placeholder="音乐时长" required>
+                <label for="musicDuration">音乐时长(秒)</label>
+                <input type="number" class="form-control" name="musicDuration" id="edit_music_duration" placeholder="音乐时长" required>
               </div>
                 <div class="form-group form-inline">
                 <label for="musicQuality">歌曲质量</label>
-                <select class="form-control" form="formMusic" name="musicQuality" >
+                <select class="form-control" form="formMusic" name="musicQuality" id="edit_music_quality" >
                 <option>普通(128kbit/s)</option>
                 <option>较高(192kbit/s)</option>
                 <option>极高(320kbit/s)</option>
@@ -75,19 +75,19 @@
               </div>
               <div class="form-group form-inline">
                 <label >歌曲文件：</label>
-                <label >封面图片</label>
-                <input type="file" name="musicFile" id="musicFile" required>
+                <label id="edit_music_file"></label>
+                <input type="file" name="musicFile" id="musicFile" >
              <!--   <p class="help-block">请上传歌词文件.</p>-->
               </div>
               <div class="form-group">
                 <label >封面图片：</label>
-                <label >封面图片</label>
-                <input type="file" name="musicCoverFile" id="musicCoverFile" required>
+                <label id="edit_cover_file"></label>
+                <input type="file" name="musicCoverFile" id="musicCoverFile" >
               </div>
               <div class="form-group">
                 <label >歌词文件：</label>
-                <label >歌词文件</label>
-                <input type="file" name="musicLyricFile" id="musicLyricFile" required>
+                <label id="edit_lyric_file"></label>
+                <input type="file" name="musicLyricFile" id="musicLyricFile" >
               </div>
               <button type="submit" class="btn  btn-primary btn-default">更新歌曲</button>
              </form>                
@@ -130,9 +130,44 @@
         update_music: function (event) {
           // `event` 是原生 DOM 事件
           var intMusicId = event.target.parentElement.parentElement.firstChild.innerHTML;
-          $('#music_info').modal({
+          document.getElementById("edit_music_id").value = intMusicId;
+          var arrMusic ={};
+          arrMusic.music_id = intMusicId;
+          var strData = JSON.stringify(arrMusic);
+          $.ajax({  type: 'POST',
+                         contentType: "application/json;charset=utf-8",
+                         url: "/enchant/getMusicItem.action",
+                         data: strData,
+                         dataType:'json',
+                         success: function(data){
+                            var musicItem = data.musicItem; 
+                            document.getElementById("edit_music_name").value = musicItem.music_name;
+                            document.getElementById("edit_music_name").value = musicItem.music_name;
+                            document.getElementById("edit_music_artist_name").value = musicItem.artist_name;
+                            document.getElementById("edit_music_album").value = musicItem.album;
+                            
+                            document.getElementById("edit_music_duration").value = musicItem.duration;
+                            
+                            document.getElementById("edit_music_quality").options[musicItem.quality].selected = true;
+                           
+                            document.getElementById("edit_music_file").innerHTML = musicItem.music_file;
+                            document.getElementById("edit_cover_file").innerHTML = musicItem.cover_file;
+                            document.getElementById("edit_lyric_file").innerHTML = musicItem.lyric_file;
+                             
+                            $('#music_info').modal({
+                             keyboard: true
+                             });
+                         },
+                         error: function() {
+                             alert('获取信息失败');
+                         }
+                         });
+          
+          
+          
+          /*$('#music_info').modal({
             keyboard: true
-          });
+          });*/
           
        },
        delete_music: function (event) {

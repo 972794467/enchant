@@ -31,11 +31,42 @@
               <td>{{user.user_type}}</td>
               <td>{{user.user_avatar}}</td>
               <td>
-                  <button type="button" class="btn btn-info btn-sm">通知</button>
-                  <button type="button" class="btn btn-danger btn-sm">注销</button>
+                  <button type="button" class="btn btn-info btn-sm" v-on:click="notice_user">通知</button>
+                  <button type="button" class="btn btn-danger btn-sm" v-on:click="delete_user">注销</button>
               </td>
             </tr>
         </table>
+</div>
+<div class="modal fade" id="notice_user_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h2 class="modal-title" >
+                                                       发送通知
+                </h2>
+                <br />
+          <div class="form-group form-inline">
+                  <label for="user_id">用户id</label>
+                  <input class="form-control" name="user_id" id="notice_user_id" type="number" disabled="disabled" />
+              </div>
+              <div class="form-group form-inline">
+                <label for="noticeTitle">标题</label>
+                <input type="text" class="form-control" name="noticeTitle" id="notice_user_title" placeholder="标题">
+              </div>
+              <div class="form-group form-inline">
+                <label for="noticeContent">内容</label>
+                 <textarea id="notice_user_content" name="noticeContent" class="form-control" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn  btn-primary btn-default" onclick="noticeUser(this)">发送通知</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
+            </div>
+        </div>
+    </div>
 </div>
 <div id="page_list">
     <nav aria-label="Page navigation">
@@ -56,13 +87,70 @@
 </div>
       </div>
 <script>
+function noticeUser() {
+        var intUserId = document.getElementById("notice_user_id").value;
+        var strNoticeTitle = document.getElementById("notice_user_title").value;
+        var strNoticeContent = document.getElementById("notice_user_content").value;
+        var arrUser ={};
+        arrUser.to_user_id = intUserId;
+        arrUser.title = strNoticeTitle;
+        arrUser.content = strNoticeContent;
+        arrUser.send_user_id = 0;
+        var strData = JSON.stringify(arrUser);
+        $.ajax({  type: 'POST',
+             contentType: "application/json;charset=utf-8",
+             url: "/enchant/sendMessage.action",
+             data: strData,
+             dataType:'json',
+             success: function(){
+               alert('发送成功');
+             },
+             error: function() {
+               alert('发送失败');
+               }
+             });
+}
 var strUrl = '/enchant/getUserList.action';
     var userList = new Vue({
        el: '#user_list',
        data: {
        users: [
-         { user_id: '学习 JavaScript',user_name: '辣鸡',user_email: 'mc',user_sex:'qweqwe',user_type:'qweqwe',user_avatar:'qweqwe'},
         ]
+      },
+       methods: {
+          notice_user: function (event) {
+              var intUserId = event.target.parentElement.parentElement.firstChild.innerHTML;
+              document.getElementById("notice_user_id").value = intUserId;
+              $('#notice_user_modal').modal({
+                  keyboard: true
+              });
+          },
+          
+           delete_user: function (event) {
+           var intUserId = event.target.parentElement.parentElement.firstChild.innerHTML;
+           var bolDelete = confirm("确定删除id为" + intUserId + "的用户?");
+           if(!bolDelete){
+               return;
+           }
+           bolDelete = confirm("再次确定,要删除id为" + intUserId + "的用户?");
+           var arrUser ={};
+           arrUser.user_id = intUserId;
+           var strData = JSON.stringify(arrUser);
+           if(bolDelete) {
+               $.ajax({  type: 'POST',
+                         contentType: "application/json;charset=utf-8",
+                         url: "/enchant/deleteUser.action",
+                         data: strData,
+                         dataType:'json',
+                         success: function(){
+                            alert('删除成功');
+                         },
+                         error: function() {
+                             alert('删除失败');
+                         }
+                         });
+                     }
+           }
       }
      });
      var pageList = new Vue({
