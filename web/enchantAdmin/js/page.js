@@ -6,10 +6,13 @@
     '<li><a v-on:click="pageNext" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>'+
   '</ul></nav>';
 }*/
-function getPageList(pn,ps,funCallBack,strUrl) {
+function getPageList(pn,ps,funCallBack,strUrl,searchKey,searchValue) {
         var resData = {};
         resData.pn = pn;
         resData.ps = ps;
+        if('' != searchKey && '' != searchValue){
+            resData[searchKey] = searchValue;
+        }
         var strData = JSON.stringify(resData);
         $.ajax({  type: 'POST',
                          contentType: "application/json;charset=utf-8",
@@ -78,4 +81,40 @@ function userListCallBack(pn,ps,data) {
         user_type:arrData['users'][intIndex]['type'],user_avatar:arrData['users'][intIndex]['avatar']});
     }
     setPagination(pageList.$data.pages_sum,pn,pn);
+}
+
+function searchMusic() {
+    var strMusicName = document.getElementById("search_music_name").value;
+    var strMusicSigner = document.getElementById("search_music_singer").value;
+    if(strMusicName != ''){
+        var strSearchKey = 'music_name';
+        var strSearchValue = strMusicName;
+    } else if(strMusicSigner != '') {
+        var strSearchKey = 'artist_name';
+        var strSearchValue = strMusicSigner;
+    }else{
+        alert('请输入查询条件!');
+        return;
+    }
+    pageList.$data.search_key = strSearchKey;
+    pageList.$data.search_value = strSearchValue;
+    getPageList(1,pageList.$data.page_size,musicListCallBack,strMusicSearchUrl,pageList.$data.search_key,pageList.$data.search_value);
+}
+
+function searchUser() {
+    var strUserId = document.getElementById("search_user_id").value;
+    var strUserName = document.getElementById("search_user_name").value;
+    if(strUserId != ''){
+        var strSearchKey = 'id';
+        var strSearchValue = strUserId;
+    } else if(strUserName != '') {
+        var strSearchKey = 'name';
+        var strSearchValue = strUserName;
+    }else{
+        alert('请输入查询条件!');
+        return;
+    }
+    pageList.$data.search_key = strSearchKey;
+    pageList.$data.search_value = strSearchValue;
+    getPageList(1,pageList.$data.page_size,userListCallBack,strUserSearchUrl,pageList.$data.search_key,pageList.$data.search_value);
 }

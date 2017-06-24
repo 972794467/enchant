@@ -4,12 +4,12 @@
           <h2>用户列表</h2>
           <form class="form-inline">
               <div class="form-group">
-                  <input type="number" class="form-control" id="" placeholder="用户id">
+                  <input type="number" class="form-control" id="search_user_id" placeholder="用户id">
               </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="" placeholder="用户名">
+              <input type="text" class="form-control" id="search_user_name" placeholder="用户名">
             </div>
-            <a  class="btn btn-default">搜索</a>
+            <a  class="btn btn-default" onclick="searchUser()">搜索</a>
           </form>
           </br>
         <div class="table-responsive">
@@ -111,6 +111,7 @@ function noticeUser() {
              });
 }
 var strUrl = '/enchant/getUserList.action';
+var strUserSearchUrl = '/enchant/searchUser.action';
     var userList = new Vue({
        el: '#user_list',
        data: {
@@ -160,6 +161,8 @@ var strUrl = '/enchant/getUserList.action';
        current_page : 1,
        focus_page : 1,
        page_size : 10,
+       search_key : '',
+       search_value : '',
        pages: [
         ]
        
@@ -168,7 +171,7 @@ var strUrl = '/enchant/getUserList.action';
           changePage: function(page_index){
               this.$data.current_page = page_index;
               this.$data.focus_page = page_index;
-              getPageList(this.$data.current_page,this.$data.page_size,userListCallBack,strUrl);
+              getPageList(this.$data.current_page,this.$data.page_size,userListCallBack,strUrl,this.$data.search_key,this.$data.search_value);
           },
           pagePrevious: function(){
               this.$data.focus_page = this.$data.focus_page - 4;

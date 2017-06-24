@@ -4,12 +4,12 @@
           <h2>歌曲列表</h2>
           <form class="form-inline">
               <div class="form-group">
-                  <input type="text" class="form-control" id="" placeholder="歌曲名称">
+                  <input type="text" class="form-control" id="search_music_name" placeholder="歌曲名称">
               </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="" placeholder="歌手">
+              <input type="text" class="form-control" id="search_music_singer" placeholder="歌手">
             </div>
-            <a  class="btn btn-default">搜索</a>
+            <a  class="btn btn-default" onclick="searchMusic()">搜索</a>
           </form>
           </br>
         <div class="table-responsive">
@@ -119,6 +119,7 @@
     </div>      
 <script>
     var strUrl = '/enchant/getMusicList.action';
+    var strMusicSearchUrl = '/enchant/searchMusic.action';
     var musicList = new Vue({
        el: '#music_list',
        data: {
@@ -202,6 +203,8 @@
        current_page : 1,
        focus_page : 1,
        page_size : 5,
+       search_key : '',
+       search_value : '',
        pages: [
         ]
        
@@ -210,7 +213,8 @@
           changePage: function(page_index){
               this.$data.current_page = page_index;
               this.$data.focus_page = page_index;
-              getPageList(this.$data.current_page,this.$data.page_size,musicListCallBack,strUrl)
+              getPageList(this.$data.current_page,this.$data.page_size,musicListCallBack,strUrl,this.$data.search_key,this.$data.search_value);
+              
           },
           pagePrevious: function(){
               this.$data.focus_page = this.$data.focus_page - 4;
