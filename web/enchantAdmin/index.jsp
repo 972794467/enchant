@@ -31,6 +31,9 @@
               name=cookies[i].getValue();
           }
       }
+      if(name == null){
+          response.sendRedirect("login.html");
+      }
   %>
 
     <!-- Fixed navbar -->
@@ -40,7 +43,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon- bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand">enchant</a>
@@ -77,8 +80,8 @@
                   </u>
                   <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li class=" page dropdown-li"><a href="#user-info">我的信息</a></li>
-                <li class=" page dropdown-li"><a href="#user-manage">注销</a></li>
+                <li class=" page dropdown-li"><a href="/enchant/getMyinfo.action">我的信息</a></li>
+                <li class=" page dropdown-li"><a href="/enchant/logout.action">注销</a></li>
               </ul>
             </li>
           </ul>

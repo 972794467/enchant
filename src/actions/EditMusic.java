@@ -22,7 +22,18 @@ public class EditMusic extends ActionSupport implements status {
     private File musicLyricFile;
     private String musicLyricFileFileName;
     private String musicAlbum;
+    private int music_id;
     private int STATUS;
+
+
+
+    public int getMusic_id() {
+        return music_id;
+    }
+
+    public void setMusic_id(int music_id) {
+        this.music_id = music_id;
+    }
 
     public String getMusicFileFileName() {
         return musicFileFileName;
@@ -137,7 +148,8 @@ public class EditMusic extends ActionSupport implements status {
         }
 
         Connection con = (Connection) sctx.getAttribute("DBCon");
-        String insertSql = "update  music_info (music_name,user_id,artist_name,album,cover_file,quality,duration,music_file,lyric_file,music_type,ext_info,create_time,update_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        con.createStatement().executeUpdate("DELETE FROM music_info WHERE music_id = "+music_id+" ");
+        String insertSql = "INSERT INTO music_info (music_name,user_id,artist_name,album,cover_file,quality,duration,music_file,lyric_file,music_type,ext_info,create_time,update_time,music_id) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         PreparedStatement pstat = con.prepareStatement(insertSql);
 
         pstat.setString(1,musicName);
@@ -185,15 +197,17 @@ public class EditMusic extends ActionSupport implements status {
         pstat.setString(11,"");
         pstat.setLong(12,System.currentTimeMillis() / 1000);
         pstat.setLong(13,System.currentTimeMillis() / 1000);
+        pstat.setInt(14,music_id);
         System.out.println(pstat.toString());
         System.out.println(pstat.toString());
         pstat.execute();
 
         System.out.println(uagent);
         if(uagent.matches(".*AppleWebKit.*") || uagent.matches(".*Mozilla.*") || uagent.matches(".*Chrome.*") ){
-            ServletActionContext.getResponse().getWriter().print("<script>alert('Upload Success!');window.location.href='/enchant/enchantAdmin/index.jsp';</script>");
+            ServletActionContext.getResponse().getWriter().print("<script>alert('Edit Success!');window.location.href='/enchant/enchantAdmin/index.jsp';</script>");
             return null;
         }
+        STATUS=1000;
         return SUCCESS;
 
     }

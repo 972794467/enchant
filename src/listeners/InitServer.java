@@ -53,6 +53,7 @@ public class InitServer implements ServletContextListener {
             System.err.println("db.getconn(): " + sqlexception.getMessage());
         }
         Jedis jedis = new Jedis("localhost");
+        System.out.println(jedis.ping());
         sctx.setAttribute("Jedis", jedis);
         System.out.println("Jedis conneected");
 

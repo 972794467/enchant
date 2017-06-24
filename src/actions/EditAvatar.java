@@ -31,14 +31,16 @@ public class EditAvatar extends ActionSupport {
         this.avatar = avatar;
     }
 
+
+
     @Override
     public String execute() throws Exception {
         ServletContext sctx = ServletActionContext.getServletContext();
         Connection con = (Connection)sctx.getAttribute("DBCon");
-
+        System.out.println(id+" "+avatar);
         String updateSQL="UPDATE user_info SET user_avatar='"+avatar+"' WHERE user_id='"+id+"'";
-        STATUS=con.createStatement().executeUpdate(updateSQL);
-
+        con.createStatement().executeUpdate(updateSQL);
+        STATUS=1000;
         return SUCCESS;
     }
 }

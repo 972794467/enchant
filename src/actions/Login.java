@@ -142,7 +142,7 @@ public class Login extends ActionSupport implements status {
         ServletActionContext.getResponse().addCookie(new Cookie("email",email));
         ServletActionContext.getResponse().addCookie(new Cookie("password",password));
 
-        querySql = "select user_type,user_id,user_avatar,user_name from user_info where  user_email='" + getEmail()
+        querySql = "select user_type,user_id,user_avatar,user_name,user_sex from user_info where  user_email='" + getEmail()
                 + "'";
         rs = con.createStatement().executeQuery(querySql);
         if (rs.next()) {
@@ -151,6 +151,8 @@ public class Login extends ActionSupport implements status {
             avatar=Integer.parseInt(rs.getString(3));
             name=rs.getString(4);
             ServletActionContext.getResponse().addCookie(new Cookie("name",name));
+            ServletActionContext.getResponse().addCookie(new Cookie("id",String.valueOf(id)));
+            System.out.println(id);
 
             if (rs.getInt(1) == 0) {
                 ServletActionContext.getRequest().getSession().setAttribute("admin", "yes");

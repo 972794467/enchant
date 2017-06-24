@@ -270,6 +270,100 @@
             </result>
 
         </action>
+        <action name="editMusic" class="actions.EditMusic" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="includeProperties">
+                    STATUS
+                </param>
+            </result>
+        </action>
+        <action name="getMyinfo" class="actions.GetMyinfo" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="success">
+
+            </result>
+        </action>
+        <action name="logout" class="actions.Logout" method="execute">
+            <result name="success" type="redirect">
+                /enchantAdmin/login.html
+            </result>
+        </action>
+        <action name="musicFavourite" class="actions.MusicFavourite" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="success">
+                <param name="includeProperties">
+                    STATUS
+                </param>
+            </result>
+        </action>
+        <action name="getFavouriteMusic" class="actions.GetFavouriteMusic" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="excludeProperties">
+                    id,favouriteList
+                </param>
+            </result>
+        </action>
+        <action name="releaseComment" class="actions.ReleaseComment" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="success">
+                <param name="includeProperties">
+                    STATUS
+                </param>
+            </result>
+        </action>
+        <action name="getMusicComment" class="actions.GetMusicComment" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="excludeProperties">
+                    music_id
+                </param>
+            </result>
+        </action>
+        <action name="getMusicItem" class="actions.GetMusicItem" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="excludeProperties">
+                    music_id
+                </param>
+            </result>
+        </action>
     </package>
 
     <package name="admin" namespace="/enchantAdmin" extends="json-default">

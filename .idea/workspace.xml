@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="722e4dcf-a2fb-4f7c-9569-2adc1cdcd9d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/SearchUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/GetFavouriteMusic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/GetMusicComment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/GetMusicItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/GetMyinfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/Logout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/MusicFavourite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/ReleaseComment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/testJedis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beans/FavoriteMusicItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beans/MusicCommnet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/DeleteMusic.java" afterPath="$PROJECT_DIR$/src/actions/DeleteMusic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/GetFeedBack.java" afterPath="$PROJECT_DIR$/src/actions/GetFeedBack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/GetMusicList.java" afterPath="$PROJECT_DIR$/src/actions/GetMusicList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/GetUserList.java" afterPath="$PROJECT_DIR$/src/actions/GetUserList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/SearchMusic.java" afterPath="$PROJECT_DIR$/src/actions/SearchMusic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/EditAvatar.java" afterPath="$PROJECT_DIR$/src/actions/EditAvatar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/EditMusic.java" afterPath="$PROJECT_DIR$/src/actions/EditMusic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/GetCode.java" afterPath="$PROJECT_DIR$/src/actions/GetCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/Login.java" afterPath="$PROJECT_DIR$/src/actions/Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/listeners/InitServer.java" afterPath="$PROJECT_DIR$/src/listeners/InitServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/enchantAdmin/index.jsp" afterPath="$PROJECT_DIR$/web/enchantAdmin/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,200 +38,78 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <file leaf-file-name="UploadMusic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/UploadMusic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7488">
-              <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2592">
+              <caret line="122" column="51" lean-forward="false" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="51" />
+              <folding>
+                <marker date="1496996740134" expanded="true" signature="4031:4221" ph="insert into music_info" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
             <state />
           </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9792">
+              <caret line="272" column="53" lean-forward="false" selection-start-line="272" selection-start-column="53" selection-end-line="272" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteMusic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/DeleteMusic.java">
+      <file leaf-file-name="EditMusic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/EditMusic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="5400">
+              <caret line="204" column="26" lean-forward="false" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="26" />
               <folding>
-                <marker date="1497348295092" expanded="true" signature="859:920" ph="SELECT cover... music_info" />
-                <marker date="1497348295092" expanded="true" signature="859:930" ph="SELECT cover... music_info" />
-                <marker date="1497348295092" expanded="true" signature="971:1000" ph="DELETE FROM " />
-                <marker date="1497348295092" expanded="true" signature="971:1009" ph="DELETE FROM " />
+                <marker date="1498009744726" expanded="true" signature="4222:4262" ph="DELETE FROM " />
+                <marker date="1498009744726" expanded="true" signature="4307:4508" ph="INSERT INTO music_info... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendMessage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/actions/SendMessage.java">
+      <file leaf-file-name="EditAvatar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/EditAvatar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="972">
+              <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
               <folding>
-                <marker date="1496909315647" expanded="true" signature="1708:1840" ph="INSERT INTO messages... " />
-                <marker date="1496909315647" expanded="true" signature="1708:1854" ph="INSERT INTO messages... " />
-                <marker date="1496909315647" expanded="true" signature="1708:1881" ph="INSERT INTO messages... " />
-                <marker date="1496909315647" expanded="true" signature="1960:2063" ph="INSERT INTO messages... " />
-                <marker date="1496909315647" expanded="true" signature="1960:2098" ph="INSERT INTO messages... " />
-                <marker date="1496909315647" expanded="true" signature="1960:2112" ph="INSERT INTO messages... " />
-                <marker date="1496909315647" expanded="true" signature="1960:2139" ph="INSERT INTO messages... " />
+                <marker date="1497884555574" expanded="true" signature="884:952" ph="UPDATE user_... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetFeedBack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/GetFeedBack.java">
+      <file leaf-file-name="GetMyinfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/GetMyinfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+            <state relative-caret-position="1836">
+              <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="28" />
               <folding>
-                <marker date="1497227907960" expanded="true" signature="1303:1382" ph="select send_... messages" />
-                <marker date="1497227907960" expanded="true" signature="1303:1393" ph="select send_... messages" />
-                <marker date="1497227907960" expanded="true" signature="1303:1394" ph="select send_... messages" />
-                <marker date="1497227907960" expanded="true" signature="1303:1410" ph="select send_... messages" />
-                <marker date="1497227907960" expanded="true" signature="1303:1411" ph="select send_... messages" />
-                <marker date="1497227907960" expanded="true" signature="1730:1752" ph="select * fro... music_info" />
-                <marker date="1497227907960" expanded="true" signature="1730:1781" ph="select * fro... messages" />
+                <marker date="1497408110867" expanded="true" signature="1114:1213" ph="SELECT user_... user_info" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetMessages.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/GetMessages.java">
+      <file leaf-file-name="GetCode.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/actions/GetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="288">
+              <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
               <folding>
-                <marker date="1496976213916" expanded="true" signature="1262:1314" ph="SELECT title... unreadmessages" />
-                <marker date="1496976213916" expanded="true" signature="1262:1334" ph="SELECT title... unreadmessages" />
-                <marker date="1496976213916" expanded="true" signature="1262:1366" ph="SELECT title... unreadmessages" />
-                <marker date="1496976213916" expanded="true" signature="1615:1694" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetMusicList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/GetMusicList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="110" column="58" lean-forward="false" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
-              <folding>
-                <marker date="1497351498856" expanded="true" signature="1550:1563" ph="SELECT count... " />
-                <marker date="1497351498856" expanded="true" signature="1550:1588" ph="SELECT count... music_info" />
-                <marker date="1497351498856" expanded="true" signature="1756:1786" ph="select * fro... music_info" />
-                <marker date="1497351498856" expanded="true" signature="1756:1825" ph="select * fro... music_info" />
-                <marker date="1497351498856" expanded="true" signature="1756:1835" ph="select * fro... music_info" />
-                <marker date="1497351498856" expanded="true" signature="3206:3244" ph="select COUNT... messages" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchMusic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/SearchMusic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="94" column="63" lean-forward="false" selection-start-line="94" selection-start-column="63" selection-end-line="94" selection-end-column="63" />
-              <folding>
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <marker date="1497401758834" expanded="true" signature="1627:1718" ph="SELECT music... music_info" />
-                <marker date="1497401758834" expanded="true" signature="1627:1733" ph="SELECT music... music_info" />
-                <marker date="1497401758834" expanded="true" signature="1627:1739" ph="SELECT music... music_info" />
-                <marker date="1497401758834" expanded="true" signature="1627:1740" ph="SELECT music... music_info" />
-                <marker date="1497401758834" expanded="true" signature="1627:1756" ph="SELECT music... music_info" />
-                <marker date="1497401758834" expanded="true" signature="1627:1757" ph="SELECT music... music_info" />
-                <marker date="1497401758834" expanded="true" signature="1850:1957" ph="SELECT music... music_info" />
-                <marker date="1497401758834" expanded="true" signature="1850:1981" ph="SELECT music... music_info" />
-                <marker date="1497401758834" expanded="true" signature="2534:2614" ph="SELECT COUNT... music_info" />
-                <marker date="1497401758834" expanded="true" signature="2534:2615" ph="SELECT COUNT... user_inf" />
-                <marker date="1497401758834" expanded="true" signature="2697:2778" ph="SELECT COUNT... music_info" />
-                <marker date="1497401758834" expanded="true" signature="2697:2779" ph="SELECT COUNT... user_inf" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetUserList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/GetUserList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="92" column="57" lean-forward="false" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
-              <folding>
-                <marker date="1497401483295" expanded="true" signature="1734:1821" ph="SELECT user_... user_info" />
-                <marker date="1497401483295" expanded="true" signature="1734:1822" ph="SELECT user_... user_info" />
-                <marker date="1497401483295" expanded="true" signature="1734:1838" ph="SELECT user_... user_info" />
-                <marker date="1497401483295" expanded="true" signature="1734:1839" ph="SELECT user_... user_info" />
-                <marker date="1497401483295" expanded="true" signature="1734:1850" ph="SELECT user_... user_info" />
-                <marker date="1497401483295" expanded="true" signature="2339:2375" ph="select COUNT... user_info" />
-                <marker date="1497401483295" expanded="true" signature="2339:2376" ph="select COUNT... messages" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/SearchUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
-                <marker date="1497401843325" expanded="true" signature="1474:1574" ph="SELECT user_... user_info" />
-                <marker date="1497401843325" expanded="true" signature="1474:1584" ph="SELECT music... music_info" />
-                <marker date="1497401843325" expanded="true" signature="1474:1608" ph="SELECT user_... user_info" />
-                <marker date="1497401843325" expanded="true" signature="1685:1800" ph="SELECT music... music_info" />
-                <marker date="1497401843325" expanded="true" signature="1685:1801" ph="SELECT user_... user_info" />
-                <marker date="1497401843325" expanded="true" signature="1685:1825" ph="SELECT user_... user_info" />
-                <marker date="1497401843325" expanded="true" signature="2366:2421" ph="SELECT count... user_info" />
-                <marker date="1497401843325" expanded="true" signature="2366:2431" ph="SELECT count... user_info" />
-                <marker date="1497401843325" expanded="true" signature="2498:2570" ph="SELECT COUNT... user_info" />
-                <marker date="1497401843325" expanded="true" signature="2498:2571" ph="SELECT COUNT... user_info" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beans/UserItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding>
-                <element signature="e#501#502#0" expanded="false" />
-                <element signature="e#526#527#0" expanded="false" />
-                <element signature="e#559#560#0" expanded="false" />
-                <element signature="e#587#588#0" expanded="false" />
-                <element signature="e#618#619#0" expanded="false" />
-                <element signature="e#645#646#0" expanded="false" />
-                <element signature="e#685#686#0" expanded="false" />
-                <element signature="e#717#718#0" expanded="false" />
-                <element signature="e#749#750#0" expanded="false" />
-                <element signature="e#777#778#0" expanded="false" />
-                <element signature="e#819#820#0" expanded="false" />
-                <element signature="e#853#854#0" expanded="false" />
-                <element signature="e#880#881#0" expanded="false" />
-                <element signature="e#906#907#0" expanded="false" />
-                <element signature="e#941#942#0" expanded="false" />
-                <element signature="e#971#972#0" expanded="false" />
-                <element signature="e#999#1000#0" expanded="false" />
-                <element signature="e#1026#1027#0" expanded="false" />
-                <element signature="e#1063#1064#0" expanded="false" />
-                <element signature="e#1095#1096#0" expanded="false" />
-                <element signature="e#1128#1129#0" expanded="false" />
-                <element signature="e#1157#1158#0" expanded="false" />
-                <element signature="e#1201#1202#0" expanded="false" />
-                <element signature="e#1237#1238#0" expanded="false" />
+                <marker date="1498187772511" expanded="true" signature="1123:1204" ph="select user_... user_info" />
+                <marker date="1498187772511" expanded="true" signature="1838:1914" ph="select email... email_code" />
+                <marker date="1498187772511" expanded="true" signature="2043:2107" ph="update email... " />
+                <marker date="1498187772511" expanded="true" signature="2235:2304" ph="INSERT INTO email_code" />
               </folding>
             </state>
           </provider>
@@ -240,19 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>reque</find>
-      <find>TOKEN_NOT_EXITED</find>
-      <find>android</find>
-      <find>script</find>
-      <find>imp</find>
-      <find>getla</find>
-      <find>getmus</find>
-      <find>login</find>
-      <find>index</find>
-      <find>name</find>
-      <find>用户名称</find>
-      <find>&lt;%=</find>
-      <find>message</find>
       <find>send</find>
       <find>getmu</find>
       <find>getfee</find>
@@ -267,6 +142,22 @@
       <find>ps</find>
       <find>getfe</find>
       <find>searchm</find>
+      <find>cooke</find>
+      <find>addCookie</find>
+      <find>con.createStatement</find>
+      <find>seta</find>
+      <find>我的</find>
+      <find>UP</find>
+      <find>delete</find>
+      <find>getMusicComment</find>
+      <find>favo</find>
+      <find>artist_name</find>
+      <find>editMusic</find>
+      <find>EDITM</find>
+      <find>form</find>
+      <find>uploa</find>
+      <find>editm</find>
+      <find>uplo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -281,15 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/beans/User.java" />
-        <option value="$PROJECT_DIR$/src/actions/status.java" />
-        <option value="$PROJECT_DIR$/out/artifacts/enchant_war_exploded/WEB-INF/classes/struts.xml" />
-        <option value="$PROJECT_DIR$/out/artifacts/enchant_war_exploded/enchantAdmin/page/notice.html" />
-        <option value="$PROJECT_DIR$/out/artifacts/enchant_war_exploded/enchantAdmin/page/musicUpload.html" />
-        <option value="$PROJECT_DIR$/web/enchantAdmin/page/musicUpload.html" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/page/notice.html" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/login.html" />
         <option value="$PROJECT_DIR$/src/actions/ReleaseNotice.java" />
@@ -300,34 +182,47 @@
         <option value="$PROJECT_DIR$/src/actions/MyJSON.java" />
         <option value="$PROJECT_DIR$/src/beans/Music.java" />
         <option value="$PROJECT_DIR$/src/actions/getLatestMessage.java" />
-        <option value="$PROJECT_DIR$/src/actions/GetCode.java" />
-        <option value="$PROJECT_DIR$/src/listeners/InitServer.java" />
         <option value="$PROJECT_DIR$/src/actions/Register.java" />
         <option value="$PROJECT_DIR$/src/beans/LatestMessage.java" />
-        <option value="$PROJECT_DIR$/src/actions/EditAvatar.java" />
         <option value="$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/struts.xml" />
         <option value="$PROJECT_DIR$/src/beans/UserIteam.java" />
-        <option value="$PROJECT_DIR$/src/actions/Login.java" />
         <option value="$PROJECT_DIR$/EchantTable.sql" />
         <option value="$PROJECT_DIR$/src/beans/MusicItem.java" />
         <option value="$PROJECT_DIR$/src/actions/GetLatestMessage.java" />
-        <option value="$PROJECT_DIR$/web/enchantAdmin/index.jsp" />
         <option value="$PROJECT_DIR$/src/actions/SendMessage.java" />
         <option value="$PROJECT_DIR$/src/actions/GetMessages.java" />
         <option value="$PROJECT_DIR$/src/beans/FeedBack.java" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/page/feedback.html" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/page/music_list.html" />
         <option value="$PROJECT_DIR$/src/actions/UploadMusic.java" />
-        <option value="$PROJECT_DIR$/src/actions/EditMusic.java" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/js/page.js" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/page/user_list.html" />
         <option value="$PROJECT_DIR$/src/actions/GetFeedBack.java" />
         <option value="$PROJECT_DIR$/src/actions/DeleteMusic.java" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/actions/GetMusicList.java" />
         <option value="$PROJECT_DIR$/src/actions/GetUserList.java" />
         <option value="$PROJECT_DIR$/src/actions/SearchMusic.java" />
         <option value="$PROJECT_DIR$/src/actions/SearchUser.java" />
+        <option value="$PROJECT_DIR$/src/actions/GetMyinfo.java" />
+        <option value="$PROJECT_DIR$/src/actions/Logout.java" />
+        <option value="$PROJECT_DIR$/src/listeners/InitServer.java" />
+        <option value="$PROJECT_DIR$/src/actions/testJedis.java" />
+        <option value="$PROJECT_DIR$/src/beans/User.java" />
+        <option value="$PROJECT_DIR$/src/actions/ReleaseComment.java" />
+        <option value="$PROJECT_DIR$/src/beans/MusicCommnet.java" />
+        <option value="$PROJECT_DIR$/src/actions/GetMusicComment.java" />
+        <option value="$PROJECT_DIR$/src/beans/FavoriteMusicIteam.java" />
+        <option value="$PROJECT_DIR$/src/actions/GetFavouriteMusic.java" />
+        <option value="$PROJECT_DIR$/src/beans/FavoriteMusicItem.java" />
+        <option value="$PROJECT_DIR$/src/actions/getMusicItem.java" />
+        <option value="$PROJECT_DIR$/src/actions/Login.java" />
+        <option value="$PROJECT_DIR$/src/actions/GetMusicItem.java" />
+        <option value="$PROJECT_DIR$/web/enchantAdmin/index.jsp" />
+        <option value="$PROJECT_DIR$/src/actions/MusicFavourite.java" />
+        <option value="$PROJECT_DIR$/src/actions/EditAvatar.java" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/actions/EditMusic.java" />
+        <option value="$PROJECT_DIR$/src/actions/GetCode.java" />
       </list>
     </option>
   </component>
@@ -543,8 +438,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -567,6 +462,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -608,12 +567,102 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -623,7 +672,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Android" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -631,6 +680,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/SplashCodes/JAViewer.git" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="actions" />
       <recent name="listeners" />
@@ -1149,6 +1201,14 @@
       </deployment>
       <server-settings>
         <data>
+          <option name="targets">
+            <list>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
           <option name="transportHostId" value="aacaacd1-73cc-4a70-8330-c3d26d6e977e" />
           <host-id>aacaacd1-73cc-4a70-8330-c3d26d6e977e</host-id>
         </data>
@@ -1179,6 +1239,14 @@
       </deployment>
       <server-settings>
         <data>
+          <option name="targets">
+            <list>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
           <option name="transportHostId" value="4d8c56f8-2f1b-48fc-8ab6-b76ecb42bef0" />
           <host-id>4d8c56f8-2f1b-48fc-8ab6-b76ecb42bef0</host-id>
         </data>
@@ -1268,7 +1336,24 @@
       <workItem from="1497026429216" duration="1198000" />
       <workItem from="1497226279030" duration="2163000" />
       <workItem from="1497345484660" duration="4736000" />
-      <workItem from="1497401199730" duration="1154000" />
+      <workItem from="1497401199730" duration="8173000" />
+      <workItem from="1497422620290" duration="2503000" />
+      <workItem from="1497509880525" duration="3319000" />
+      <workItem from="1497531727347" duration="23000" />
+      <workItem from="1497575777729" duration="15897000" />
+      <workItem from="1497777175048" duration="8644000" />
+      <workItem from="1497797726692" duration="17000" />
+      <workItem from="1497798067394" duration="1506000" />
+      <workItem from="1497830775217" duration="2332000" />
+      <workItem from="1497855841117" duration="4576000" />
+      <workItem from="1497880546324" duration="22000" />
+      <workItem from="1497881090358" duration="1849000" />
+      <workItem from="1497884239327" duration="1462000" />
+      <workItem from="1497921536705" duration="1237000" />
+      <workItem from="1497960849129" duration="1173000" />
+      <workItem from="1498005000900" duration="6530000" />
+      <workItem from="1498144671319" duration="719000" />
+      <workItem from="1498176515172" duration="3967000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize the project">
       <created>1494933645962</created>
@@ -1326,11 +1411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497015554350</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add search module">
+      <created>1497402390764</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1497402390764</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210633000" />
+    <option name="totallyTimeSpent" value="273428000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1347,29 +1439,29 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835978" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2793651" sideWeight="0.3453125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17135416" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16927083" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3121693" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3121693" sideWeight="0.49583334" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49580714" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.48541668" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835978" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3026455" sideWeight="0.475" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.031746034" sideWeight="0.4937107" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28042328" sideWeight="0.71302086" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2793651" sideWeight="0.6546875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1397,7 +1489,8 @@
     <MESSAGE value="fix email bugs&#10;add GetLatestMessage,EditAvatar moudle" />
     <MESSAGE value="change html to jsp&#10;add messages relevant module" />
     <MESSAGE value="fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
+    <MESSAGE value="Add search module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add search module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1461,8 +1554,14 @@
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/actions/EditMusic.java</url>
+          <line>133</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1471,68 +1570,81 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/struts-2.5.10.1-min-lib/lib/struts2-json-plugin-2.5.10.1.jar!/org/apache/struts2/json/JSONInterceptor.class" />
-    <entry file="uml://JAVA/">
+    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/page/music_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5292">
+          <caret line="147" column="51" lean-forward="false" selection-start-line="147" selection-start-column="51" selection-end-line="147" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/listeners/InitServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.GetUserList">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
-          <OriginalElement />
+          <OriginalElement>actions.GetUserList</OriginalElement>
           <nodes>
-            <node x="" y="">com</node>
-            <node x="" y="">template</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">ognl</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">listeners</node>
-            <node x="" y="">org</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">redis</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">java</node>
-            <node x="" y="">freemarker</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">beans</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">net</node>
-            <node x="" y="">actions</node>
-            <node x="" y="">javassist</node>
+            <node x="" y="">actions.ReleaseNotice</node>
+            <node x="" y="">actions.GetFeedBack</node>
+            <node x="" y="">actions.GetMessages</node>
+            <node x="" y="">actions.SearchMusic</node>
+            <node x="" y="">actions.EditAvatar</node>
+            <node x="" y="">actions.Login</node>
+            <node x="" y="">actions.EditMusic</node>
+            <node x="" y="">actions.SendMessage</node>
+            <node x="" y="">actions.GetCode</node>
+            <node x="" y="">actions.status</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">actions.GetMyinfo</node>
+            <node x="" y="">actions.SearchUser</node>
+            <node x="" y="">actions.DeleteMusic</node>
+            <node x="" y="">java.io.Serializable</node>
+            <node x="" y="">actions.GetLatestMessage</node>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">actions.GetBroadcastMessages</node>
+            <node x="" y="">actions.GetUserList</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">actions.GetMusicList</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">actions.Register</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="248.0" y="221.0" />
+          <settings layout="Hierarchic Group" zoom="0.6273569023569021" x="-617.0" y="-632.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Constructors</Category>
+            <Category>Fields</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/actions">
+    <entry file="uml://JAVA/beans.message">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
-          <OriginalElement>actions</OriginalElement>
+          <OriginalElement>beans.message</OriginalElement>
           <nodes>
-            <node x="" y="">actions.ReleaseNotice</node>
-            <node x="" y="">actions.MyJSON</node>
-            <node x="" y="">actions.GetLatestMessage</node>
-            <node x="" y="">actions.GetCode</node>
-            <node x="" y="">actions.GetBroadcastMessages</node>
-            <node x="" y="">actions.UploadMusic</node>
-            <node x="" y="">actions.status</node>
-            <node x="" y="">actions.GetMusicList</node>
-            <node x="" y="">actions.Login</node>
-            <node x="" y="">actions.Register</node>
+            <node x="-470.0" y="-243.0">beans.message</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="802.0" y="859.0" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-336.0" y="-57.0" />
+          <SelectedNodes>
+            <node>beans.message</node>
+          </SelectedNodes>
           <Categories>
             <Category>Fields</Category>
+            <Category>Constructors</Category>
             <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
@@ -1540,91 +1652,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/sql/Statement.java" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5436">
-          <caret line="151" column="43" lean-forward="false" selection-start-line="151" selection-start-column="43" selection-end-line="151" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/LatestMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/EditAvatar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <marker date="1496825995583" expanded="true" signature="840:908" ph="UPDATE user_... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="118" column="36" lean-forward="false" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1496799113374" expanded="true" signature="1123:1204" ph="select user_... user_info" />
-            <marker date="1496799113374" expanded="true" signature="1838:1914" ph="select email... email_code" />
-            <marker date="1496799113374" expanded="true" signature="2043:2107" ph="update email... " />
-            <marker date="1496799113374" expanded="true" signature="2235:2304" ph="INSERT INTO email_code" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="151" column="33" lean-forward="true" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
-          <folding>
-            <marker date="1496883021446" expanded="true" signature="2109:2168" ph="select passw... users" />
-            <marker date="1496883021446" expanded="true" signature="2109:2198" ph="select passw... users" />
-            <marker date="1496883021446" expanded="true" signature="2531:2625" ph="select user_... user_info" />
-            <marker date="1496883021446" expanded="true" signature="4342:4458" ph="select user_... user_info" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/beans/Music.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
+        <state relative-caret-position="579">
           <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/beans.Music">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>beans.Music</OriginalElement>
+          <nodes>
+            <node x="-199.16666666666669" y="-123.33333333333331">beans.Music</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="-288.0" y="15.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1635,88 +1687,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="115" column="62" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="62" />
-          <folding>
-            <marker date="1496806031511" expanded="true" signature="1884:2047" ph="insert into user_info" />
-            <marker date="1496806031511" expanded="true" signature="2077:2144" ph="select email... users" />
-            <marker date="1496806031511" expanded="true" signature="2201:2272" ph="select code email_code" />
-            <marker date="1496806031511" expanded="true" signature="2489:2574" ph="select user_... user_info" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/MyJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="87" column="36" lean-forward="false" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/actions/GetMusicList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/ReleaseNotice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2124">
-          <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#391#392#0" expanded="false" />
-            <element signature="e#420#421#0" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-            <element signature="e#492#493#0" expanded="false" />
-            <element signature="e#546#547#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#726#727#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-            <marker date="1496883021438" expanded="true" signature="1400:1504" ph="insert into messages... " />
-            <marker date="1496883021438" expanded="true" signature="2150:2165" ph="select user_... user_info" />
-            <marker date="1496883021438" expanded="true" signature="2150:2193" ph="select user_... user_info" />
-            <marker date="1496883021438" expanded="true" signature="2150:2195" ph="select id fr... messages" />
-            <marker date="1496883021438" expanded="true" signature="2150:2215" ph="select id fr... messages" />
-            <marker date="1496883021438" expanded="true" signature="2150:2231" ph="select id fr... messages" />
-            <marker date="1496883021438" expanded="true" signature="2150:2240" ph="select id fr... messages" />
-            <marker date="1496883021438" expanded="true" signature="2387:2416" ph="select user_... user_info" />
-            <marker date="1496883021438" expanded="true" signature="2610:2717" ph="INSERT INTO unreadboardcastmessages... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/actions/GetMessages.class">
+    <entry file="file://$PROJECT_DIR$/src/beans/UserItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="51" column="64" lean-forward="true" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
+          <caret line="11" column="26" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/actions/GetLatestMessage.class">
+    <entry file="file://$PROJECT_DIR$/src/beans/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EchantTable.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="118" column="42" lean-forward="false" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="24" />
+    <entry file="uml://JAVA/beans.User">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>beans.User</OriginalElement>
+          <nodes>
+            <node x="1.538461538461604" y="76.15384615384616">beans.User</node>
+            <node x="106.5" y="0.0">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="beans.User" target="java.io.Serializable">
+              <point x="0.0" y="-118.5" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="-258.0" y="70.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1727,246 +1734,235 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/page/feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+    <entry file="uml://JAVA/beans.MusicItem">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>beans.MusicItem</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">beans.MusicItem</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-332.0" y="-57.0" />
+          <SelectedNodes>
+            <node>beans.MusicItem</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/listeners/InitServer.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/jre/lib/ext/jedis-2.9.0.jar!/redis/clients/jedis/JedisCommands.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="90" column="36" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="36" />
+        <state relative-caret-position="577">
+          <caret line="131" column="28" lean-forward="false" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/js/func.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/js/md5.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/js/npm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/EditMusic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <marker date="1496996990989" expanded="true" signature="4029:4215" ph="update music... " />
-            <marker date="1496996990989" expanded="true" signature="4035:4215" ph="insert into music_info" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/js/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="77" column="102" lean-forward="false" selection-start-line="77" selection-start-column="102" selection-end-line="77" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/page/user_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetLatestMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#478#479#0" expanded="false" />
-            <element signature="e#503#504#0" expanded="false" />
-            <element signature="e#537#538#0" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-            <element signature="e#613#614#0" expanded="false" />
-            <element signature="e#651#652#0" expanded="false" />
-            <marker date="1496893165797" expanded="true" signature="979:1370" ph="SELECT msui,... messages" />
-            <marker date="1496893165797" expanded="true" signature="979:1371" ph="SELECT * FRO... messages" />
-            <marker date="1496893165797" expanded="true" signature="979:1372" ph="SELECT msui,... messages" />
-            <marker date="1496893165797" expanded="true" signature="1085:1148" ph="SELECT send_... " />
-            <marker date="1496893165797" expanded="true" signature="1085:1200" ph="SELECT send_... messages" />
-            <marker date="1496893165797" expanded="true" signature="1085:1271" ph="SELECT send_... messages" />
-          </folding>
+    <entry file="uml://JAVA/actions.status">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.status</OriginalElement>
+          <nodes>
+            <node x="" y="">actions.status</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.4000000000000001" x="47.0" y="50.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/GetBroadcastMessages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
+        <state relative-caret-position="978">
           <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/Logout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/beans.FeedBack">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>beans.FeedBack</OriginalElement>
+          <nodes>
+            <node x="-112.5" y="-69.99999999999999">beans.FeedBack</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="-264.0" y="24.0" />
+          <SelectedNodes>
+            <node>beans.FeedBack</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="115" column="62" lean-forward="false" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="62" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#585#586#0" expanded="false" />
-            <element signature="e#656#657#0" expanded="false" />
-            <element signature="e#716#717#0" expanded="false" />
-            <element signature="e#764#765#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#895#896#0" expanded="false" />
-            <element signature="e#925#926#0" expanded="false" />
-            <element signature="e#954#955#0" expanded="false" />
-            <element signature="e#980#981#0" expanded="false" />
-            <element signature="e#1005#1006#0" expanded="false" />
-            <element signature="e#1038#1039#0" expanded="false" />
-            <element signature="e#1066#1067#0" expanded="false" />
-            <marker date="1496732396966" expanded="true" signature="1368:1461" ph="select messa... unreadboardcastmessages" />
-            <marker date="1496732396966" expanded="true" signature="1686:1783" ph="select title... messages" />
+            <marker date="1496806031511" expanded="true" signature="1884:2047" ph="insert into user_info" />
+            <marker date="1496806031511" expanded="true" signature="2077:2144" ph="select email... users" />
+            <marker date="1496806031511" expanded="true" signature="2201:2272" ph="select code email_code" />
+            <marker date="1496806031511" expanded="true" signature="2489:2574" ph="select user_... user_info" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/page/music_list.html">
+    <entry file="file://$PROJECT_DIR$/src/beans/MusicCommnet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="150" column="45" lean-forward="false" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
+        <state relative-caret-position="648">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/enchantAdmin/page/music_list.html">
+    <entry file="file://$PROJECT_DIR$/src/beans/bean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3780">
-          <caret line="105" column="8" lean-forward="false" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="144">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/UploadMusic.java">
+    <entry file="file://$PROJECT_DIR$/src/beans/LatestMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5184">
-          <caret line="194" column="24" lean-forward="false" selection-start-line="194" selection-start-column="24" selection-end-line="194" selection-end-column="24" />
+        <state relative-caret-position="180">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/ReleaseNotice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <marker date="1496996740134" expanded="true" signature="4031:4221" ph="insert into music_info" />
+            <marker date="1496883021438" expanded="true" signature="1400:1504" ph="insert into messages... " />
+            <marker date="1496883021438" expanded="true" signature="2150:2240" ph="select id fr... messages" />
+            <marker date="1496883021438" expanded="true" signature="2387:2416" ph="select user_... user_info" />
+            <marker date="1496883021438" expanded="true" signature="2610:2717" ph="INSERT INTO unreadboardcastmessages... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/UserItem.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/jre/lib/ext/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="438" column="16" lean-forward="false" selection-start-line="438" selection-start-column="16" selection-end-line="438" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetUserList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="69" column="16" lean-forward="false" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/ReleaseComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="75" column="38" lean-forward="false" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/testJedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetMusicComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/actions/MusicFavourite.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/FavoriteMusicItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#501#502#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-            <element signature="e#587#588#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#645#646#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#749#750#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#819#820#0" expanded="false" />
-            <element signature="e#853#854#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#906#907#0" expanded="false" />
-            <element signature="e#941#942#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#999#1000#0" expanded="false" />
-            <element signature="e#1026#1027#0" expanded="false" />
-            <element signature="e#1063#1064#0" expanded="false" />
-            <element signature="e#1095#1096#0" expanded="false" />
-            <element signature="e#1128#1129#0" expanded="false" />
-            <element signature="e#1157#1158#0" expanded="false" />
-            <element signature="e#1201#1202#0" expanded="false" />
-            <element signature="e#1237#1238#0" expanded="false" />
-          </folding>
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+    <entry file="file://$PROJECT_DIR$/src/actions/SendMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7488">
-          <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/GetFeedBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
+        <state relative-caret-position="1728">
           <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-          <folding>
-            <marker date="1497227907960" expanded="true" signature="1303:1382" ph="select send_... messages" />
-            <marker date="1497227907960" expanded="true" signature="1303:1393" ph="select send_... messages" />
-            <marker date="1497227907960" expanded="true" signature="1303:1394" ph="select send_... messages" />
-            <marker date="1497227907960" expanded="true" signature="1303:1410" ph="select send_... messages" />
-            <marker date="1497227907960" expanded="true" signature="1303:1411" ph="select send_... messages" />
-            <marker date="1497227907960" expanded="true" signature="1730:1752" ph="select * fro... music_info" />
-            <marker date="1497227907960" expanded="true" signature="1730:1781" ph="select * fro... messages" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetLatestMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/GetMessages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="1116">
           <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-          <folding>
-            <marker date="1496976213916" expanded="true" signature="1262:1314" ph="SELECT title... unreadmessages" />
-            <marker date="1496976213916" expanded="true" signature="1262:1334" ph="SELECT title... unreadmessages" />
-            <marker date="1496976213916" expanded="true" signature="1262:1366" ph="SELECT title... unreadmessages" />
-            <marker date="1496976213916" expanded="true" signature="1615:1694" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/GetMusicList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="110" column="58" lean-forward="false" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
+        <state relative-caret-position="3276">
+          <caret line="118" column="23" lean-forward="false" selection-start-line="59" selection-start-column="3" selection-end-line="118" selection-end-column="23" />
           <folding>
             <marker date="1497351498856" expanded="true" signature="1550:1563" ph="SELECT count... " />
             <marker date="1497351498856" expanded="true" signature="1550:1588" ph="SELECT count... music_info" />
@@ -1978,93 +1974,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetUserList.java">
+    <entry file="file://$PROJECT_DIR$/src/actions/GetMusicItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="92" column="57" lean-forward="false" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+        <state relative-caret-position="288">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetFavouriteMusic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4428">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding>
-            <marker date="1497401483295" expanded="true" signature="1734:1821" ph="SELECT user_... user_info" />
-            <marker date="1497401483295" expanded="true" signature="1734:1822" ph="SELECT user_... user_info" />
-            <marker date="1497401483295" expanded="true" signature="1734:1838" ph="SELECT user_... user_info" />
-            <marker date="1497401483295" expanded="true" signature="1734:1839" ph="SELECT user_... user_info" />
-            <marker date="1497401483295" expanded="true" signature="1734:1850" ph="SELECT user_... user_info" />
-            <marker date="1497401483295" expanded="true" signature="2339:2375" ph="select COUNT... user_info" />
-            <marker date="1497401483295" expanded="true" signature="2339:2376" ph="select COUNT... messages" />
+            <marker date="1497798932587" expanded="true" signature="2109:2168" ph="select passw... users" />
+            <marker date="1497798932587" expanded="true" signature="2109:2198" ph="select passw... users" />
+            <marker date="1497798932587" expanded="true" signature="2531:2625" ph="select user_... user_info" />
+            <marker date="1497798932587" expanded="true" signature="4342:4467" ph="select user_... user_info" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/SearchMusic.java">
+    <entry file="file://$PROJECT_DIR$/src/actions/status.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="94" column="63" lean-forward="false" selection-start-line="94" selection-start-column="63" selection-end-line="94" selection-end-column="63" />
+        <state relative-caret-position="288">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/struts-2.5.10.1-min-lib/lib/struts2-core-2.5.10.1.jar!/struts-default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="211" column="91" lean-forward="true" selection-start-line="211" selection-start-column="91" selection-end-line="211" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/struts-2.5.10.1-min-lib/lib/struts2-core-2.5.10.1.jar!/com/opensymphony/xwork2/interceptor/ParametersInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/MusicFavourite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="77" column="4" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/UploadMusic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2592">
+          <caret line="122" column="51" lean-forward="false" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="51" />
           <folding>
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <marker date="1497401758834" expanded="true" signature="1627:1718" ph="SELECT music... music_info" />
-            <marker date="1497401758834" expanded="true" signature="1627:1733" ph="SELECT music... music_info" />
-            <marker date="1497401758834" expanded="true" signature="1627:1739" ph="SELECT music... music_info" />
-            <marker date="1497401758834" expanded="true" signature="1627:1740" ph="SELECT music... music_info" />
-            <marker date="1497401758834" expanded="true" signature="1627:1756" ph="SELECT music... music_info" />
-            <marker date="1497401758834" expanded="true" signature="1627:1757" ph="SELECT music... music_info" />
-            <marker date="1497401758834" expanded="true" signature="1850:1957" ph="SELECT music... music_info" />
-            <marker date="1497401758834" expanded="true" signature="1850:1981" ph="SELECT music... music_info" />
-            <marker date="1497401758834" expanded="true" signature="2534:2614" ph="SELECT COUNT... music_info" />
-            <marker date="1497401758834" expanded="true" signature="2534:2615" ph="SELECT COUNT... user_inf" />
-            <marker date="1497401758834" expanded="true" signature="2697:2778" ph="SELECT COUNT... music_info" />
-            <marker date="1497401758834" expanded="true" signature="2697:2779" ph="SELECT COUNT... user_inf" />
+            <marker date="1496996740134" expanded="true" signature="4031:4221" ph="insert into music_info" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/SearchUser.java">
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="9792">
+          <caret line="272" column="53" lean-forward="false" selection-start-line="272" selection-start-column="53" selection-end-line="272" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/EditMusic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5400">
+          <caret line="204" column="26" lean-forward="false" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <marker date="1497401843325" expanded="true" signature="1474:1574" ph="SELECT user_... user_info" />
-            <marker date="1497401843325" expanded="true" signature="1474:1584" ph="SELECT music... music_info" />
-            <marker date="1497401843325" expanded="true" signature="1474:1608" ph="SELECT user_... user_info" />
-            <marker date="1497401843325" expanded="true" signature="1685:1800" ph="SELECT music... music_info" />
-            <marker date="1497401843325" expanded="true" signature="1685:1801" ph="SELECT user_... user_info" />
-            <marker date="1497401843325" expanded="true" signature="1685:1825" ph="SELECT user_... user_info" />
-            <marker date="1497401843325" expanded="true" signature="2366:2421" ph="SELECT count... user_info" />
-            <marker date="1497401843325" expanded="true" signature="2366:2431" ph="SELECT count... user_info" />
-            <marker date="1497401843325" expanded="true" signature="2498:2570" ph="SELECT COUNT... user_info" />
-            <marker date="1497401843325" expanded="true" signature="2498:2571" ph="SELECT COUNT... user_info" />
+            <marker date="1498009744726" expanded="true" signature="4222:4262" ph="DELETE FROM " />
+            <marker date="1498009744726" expanded="true" signature="4307:4508" ph="INSERT INTO music_info... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/DeleteMusic.java">
+    <entry file="file://$PROJECT_DIR$/src/actions/EditAvatar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        <state relative-caret-position="972">
+          <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
-            <marker date="1497348295092" expanded="true" signature="859:920" ph="SELECT cover... music_info" />
-            <marker date="1497348295092" expanded="true" signature="859:930" ph="SELECT cover... music_info" />
-            <marker date="1497348295092" expanded="true" signature="971:1000" ph="DELETE FROM " />
-            <marker date="1497348295092" expanded="true" signature="971:1009" ph="DELETE FROM " />
+            <marker date="1497884555574" expanded="true" signature="884:952" ph="UPDATE user_... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/SendMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/actions/GetMyinfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="1836">
+          <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="28" />
           <folding>
-            <marker date="1496909315647" expanded="true" signature="1708:1840" ph="INSERT INTO messages... " />
-            <marker date="1496909315647" expanded="true" signature="1708:1854" ph="INSERT INTO messages... " />
-            <marker date="1496909315647" expanded="true" signature="1708:1881" ph="INSERT INTO messages... " />
-            <marker date="1496909315647" expanded="true" signature="1960:2063" ph="INSERT INTO messages... " />
-            <marker date="1496909315647" expanded="true" signature="1960:2098" ph="INSERT INTO messages... " />
-            <marker date="1496909315647" expanded="true" signature="1960:2112" ph="INSERT INTO messages... " />
-            <marker date="1496909315647" expanded="true" signature="1960:2139" ph="INSERT INTO messages... " />
+            <marker date="1497408110867" expanded="true" signature="1114:1213" ph="SELECT user_... user_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+          <folding>
+            <marker date="1498187772511" expanded="true" signature="1123:1204" ph="select user_... user_info" />
+            <marker date="1498187772511" expanded="true" signature="1838:1914" ph="select email... email_code" />
+            <marker date="1498187772511" expanded="true" signature="2043:2107" ph="update email... " />
+            <marker date="1498187772511" expanded="true" signature="2235:2304" ph="INSERT INTO email_code" />
           </folding>
         </state>
       </provider>
